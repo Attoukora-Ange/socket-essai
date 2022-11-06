@@ -26,7 +26,7 @@ io.on('connection', (socket)=>{
             message,
             id : socket.id
         }
-        console.log(message)
+      
         io.emit('message_client', mes)
     })
     socket.on('disconnect', ()=>{
